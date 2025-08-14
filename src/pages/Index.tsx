@@ -146,11 +146,11 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold font-heading mb-6 leading-tight my-[50px]">
+                <h1 className="text-5xl font-bold font-heading mb-6 leading-tight my-[50px] text-left md:text-5xl">
                   Hi, I'm <span className="text-transparent bg-gradient-primary bg-clip-text">Deni Firdaus</span>
                   <br />Software Developer
                 </h1>
-                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
                   Building Web & Mobile Applications with AI-Powered Speed and Quality. 
                   Transform your ideas into powerful digital solutions that users love.
                 </p>
@@ -219,7 +219,7 @@ const Index = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-heading mb-6">What I Do</h2>
+            <h2 className="font-bold font-heading mb-6 text-5xl">What I Do</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Specialized in creating modern digital solutions with AI integration
             </p>
@@ -255,7 +255,7 @@ const Index = () => {
       <section className="py-20 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-heading mb-6">Why Clients Choose Me</h2>
+            <h2 className="font-bold font-heading mb-6 text-5xl">Why Clients Choose Me</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Delivering exceptional results through expertise and innovation
             </p>
@@ -300,7 +300,7 @@ const Index = () => {
       <section className="py-20 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-heading mb-6">Pricing Plans</h2>
+            <h2 className="font-heading mb-6 font-bold text-5xl">Pricing Plans</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Transparent pricing for every project size. Prices may vary based on complexity.
             </p>
@@ -338,7 +338,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-center mb-16">
             <div>
-              <h2 className="text-4xl font-bold font-heading mb-4">Featured Projects</h2>
+              <h2 className="font-bold font-heading mb-4 text-5xl">Featured Projects</h2>
               <p className="text-xl text-muted-foreground">Recent work showcasing AI-powered solutions</p>
             </div>
             <Button variant="outline" asChild>
