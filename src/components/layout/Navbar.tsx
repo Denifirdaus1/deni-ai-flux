@@ -29,9 +29,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center h-16 relative">
           {/* Logo */}
           <Link to="/" className="absolute left-0 flex items-center gap-2 font-heading font-bold text-xl py-0 px-[21px]">
-            <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
-            </div>
+            
             Deni Firdaus
           </Link>
 
