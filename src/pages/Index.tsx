@@ -146,17 +146,17 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl font-bold font-heading mb-6 leading-tight my-[50px] text-left md:text-5xl">
+                <h1 className="text-5xl font-bold font-heading mb-6 leading-tight my-[50px] text-left md:text-5xl mx-[23px]">
                   Hi, I'm <span className="text-transparent bg-gradient-primary bg-clip-text">Deni Firdaus</span>
                   <br />Software Developer
                 </h1>
-                <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
+                <p className="text-muted-foreground mb-8 leading-relaxed text-lg mx-[23px]">
                   Building Web & Mobile Applications with AI-Powered Speed and Quality. 
                   Transform your ideas into powerful digital solutions that users love.
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 mx-[23px]">
                 <Button variant="hero" size="lg" asChild>
                   <a href="/contact">
                     Hire Me
@@ -169,7 +169,7 @@ const Index = () => {
                 </Button>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 mx-[23px]">
                 <Button variant="ghost" size="icon" className="hover-glow" asChild>
                   <a href="https://github.com/denifirdaus" target="_blank" rel="noopener noreferrer">
                     <Github className="w-6 h-6" />
