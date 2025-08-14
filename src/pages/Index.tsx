@@ -205,7 +205,7 @@ const Index = () => {
       </section>
 
       {/* Tech Stack Scroll */}
-      <section className="py-16 border-t border-white/10">
+      <section className="border-t border-white/10 py-[22px]">
         <div className="overflow-hidden">
           <div className="flex gap-8 animate-[scroll_30s_linear_infinite]">
             {[...techStack, ...techStack].map((tech, index) => <Badge key={index} variant="outline" className="whitespace-nowrap font-mono">
@@ -216,7 +216,7 @@ const Index = () => {
       </section>
 
       {/* What I Do */}
-      <section className="py-20">
+      <section className="py-[51px]">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-bold font-heading mb-6 text-5xl">What I Do</h2>
