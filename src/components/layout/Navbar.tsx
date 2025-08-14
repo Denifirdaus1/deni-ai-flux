@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Code } from "lucide-react";
+import { Menu, X, Code, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
@@ -42,8 +42,8 @@ const Navbar = () => {
 
           {/* Hire Me Button */}
           <div className="absolute right-0 hidden md:block">
-            <Button variant="gradient" asChild>
-              <Link to="/contact">Hire Me</Link>
+            <Button variant="gradient" size="icon" asChild>
+              <Link to="/contact"><Sparkles className="w-5 h-5" /></Link>
             </Button>
           </div>
 
@@ -60,7 +60,8 @@ const Navbar = () => {
               </Link>)}
             <Button variant="gradient" className="w-full" asChild>
               <Link to="/contact" onClick={() => setIsOpen(false)}>
-                Hire Me
+                <Sparkles className="w-5 h-5 mr-2" />
+                AI Gemini
               </Link>
             </Button>
           </div>}
