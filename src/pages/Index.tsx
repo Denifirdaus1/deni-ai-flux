@@ -1,9 +1,5 @@
 import { useState } from "react";
-import { 
-  Code, Smartphone, Brain, Github, Linkedin, Mail, Download, 
-  Zap, Users, Trophy, Clock, Star, ArrowRight, ChevronLeft, ChevronRight,
-  Sparkles, Rocket, Shield, Target
-} from "lucide-react";
+import { Code, Smartphone, Brain, Github, Linkedin, Mail, Download, Zap, Users, Trophy, Clock, Star, ArrowRight, ChevronLeft, ChevronRight, Sparkles, Rocket, Shield, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,208 +8,145 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import heroImage from "@/assets/hero-bg.jpg";
 import aiPattern from "@/assets/ai-pattern.jpg";
-
 const Index = () => {
   const [currentReview, setCurrentReview] = useState(0);
   const [showResume, setShowResume] = useState(false);
-
-  const techStack = [
-    "React", "TypeScript", "Node.js", "Python", "React Native", "Next.js", 
-    "AI/ML", "TensorFlow", "Firebase", "PostgreSQL", "MongoDB", "AWS"
-  ];
-
-  const services = [
-    {
-      icon: Code,
-      title: "Web Development",
-      description: "Full-stack web applications with modern frameworks and AI integration",
-      features: ["React/Next.js", "Node.js Backend", "Database Design", "API Development"]
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile Development", 
-      description: "Cross-platform mobile apps with native performance and AI features",
-      features: ["React Native", "iOS & Android", "Push Notifications", "Offline Support"]
-    },
-    {
-      icon: Brain,
-      title: "AI Integration",
-      description: "Intelligent features powered by machine learning and modern AI tools",
-      features: ["ML Models", "AI Automation", "Smart Analytics", "Chatbots"]
-    }
-  ];
-
-  const whyChooseMe = [
-    {
-      title: "AI-Powered Development",
-      description: "Leverage cutting-edge AI tools to deliver projects 50% faster with higher quality code",
-      icon: Sparkles
-    },
-    {
-      title: "Full-Stack Expertise", 
-      description: "Complete solution from database design to user interface with seamless integration",
-      icon: Rocket
-    },
-    {
-      title: "Proven Results",
-      description: "Successfully delivered 50+ projects with 98% client satisfaction rate",
-      icon: Trophy
-    },
-    {
-      title: "On-Time Delivery",
-      description: "Consistent track record of meeting deadlines without compromising quality",
-      icon: Clock
-    }
-  ];
-
-  const capabilities = [
-    {
-      title: "Fast Code with AI",
-      description: "Generate production-ready code 3x faster using advanced AI assistance",
-      gridSize: "md:col-span-2"
-    },
-    {
-      title: "AI Workflows",
-      description: "Automated testing, deployment, and optimization",
-      gridSize: "md:col-span-1"
-    },
-    {
-      title: "The AI I Use",
-      description: "ChatGPT, GitHub Copilot, Claude, and custom ML models",
-      gridSize: "md:col-span-1"
-    },
-    {
-      title: "Full-Stack Development",
-      description: "End-to-end solutions from concept to deployment",
-      gridSize: "md:col-span-2"
-    },
-    {
-      title: "50+ Projects",
-      description: "Successfully completed and deployed",
-      gridSize: "md:col-span-1"
-    }
-  ];
-
-  const pricing = [
-    {
-      name: "Basic",
-      price: "$80",
-      duration: "1-2 weeks",
-      features: [
-        "Landing Page or Simple App",
-        "Responsive Design",
-        "Basic AI Features",
-        "Email Support",
-        "Source Code Included"
-      ],
-      popular: false
-    },
-    {
-      name: "Standard",
-      price: "$150", 
-      duration: "2-3 weeks",
-      features: [
-        "Full Web/Mobile Application",
-        "Database Integration", 
-        "Advanced AI Features",
-        "Admin Dashboard",
-        "Priority Support",
-        "1 Month Free Updates"
-      ],
-      popular: true
-    },
-    {
-      name: "Express",
-      price: "$200",
-      duration: "1 week",
-      features: [
-        "Rush Delivery (50% faster)",
-        "Premium AI Integration",
-        "Real-time Features",
-        "Advanced Analytics",
-        "24/7 Support",
-        "3 Months Free Updates"
-      ],
-      popular: false
-    }
-  ];
-
-  const projects = [
-    {
-      name: "AI E-commerce Platform",
-      category: "Web",
-      techStack: ["React", "Node.js", "AI/ML"],
-      github: "https://github.com",
-      preview: "https://demo.com",
-      image: aiPattern
-    },
-    {
-      name: "Smart Food Delivery App",
-      category: "Mobile",
-      techStack: ["React Native", "Firebase"],
-      github: "https://github.com",
-      preview: "https://demo.com", 
-      image: aiPattern
-    },
-    {
-      name: "SaaS Analytics Dashboard",
-      category: "Web",
-      techStack: ["Next.js", "PostgreSQL"],
-      github: "https://github.com",
-      preview: "https://demo.com",
-      image: aiPattern
-    }
-  ];
-
-  const reviews = [
-    {
-      name: "Sarah Johnson",
-      role: "Startup Founder",
-      review: "Deni delivered our MVP in record time with impressive AI features. The quality exceeded our expectations!",
-      rating: 5,
-      avatar: "/api/placeholder/40/40"
-    },
-    {
-      name: "Mike Chen",
-      role: "Product Manager",  
-      review: "Professional, reliable, and incredibly skilled. The AI integration was seamless and boosted our user engagement by 40%.",
-      rating: 5,
-      avatar: "/api/placeholder/40/40"
-    },
-    {
-      name: "Lisa Rodriguez",
-      role: "E-commerce Owner",
-      review: "Outstanding work on our mobile app. The AI-powered recommendations increased our sales significantly.",
-      rating: 5,
-      avatar: "/api/placeholder/40/40"
-    }
-  ];
-
+  const techStack = ["React", "TypeScript", "Node.js", "Python", "React Native", "Next.js", "AI/ML", "TensorFlow", "Firebase", "PostgreSQL", "MongoDB", "AWS"];
+  const services = [{
+    icon: Code,
+    title: "Web Development",
+    description: "Full-stack web applications with modern frameworks and AI integration",
+    features: ["React/Next.js", "Node.js Backend", "Database Design", "API Development"]
+  }, {
+    icon: Smartphone,
+    title: "Mobile Development",
+    description: "Cross-platform mobile apps with native performance and AI features",
+    features: ["React Native", "iOS & Android", "Push Notifications", "Offline Support"]
+  }, {
+    icon: Brain,
+    title: "AI Integration",
+    description: "Intelligent features powered by machine learning and modern AI tools",
+    features: ["ML Models", "AI Automation", "Smart Analytics", "Chatbots"]
+  }];
+  const whyChooseMe = [{
+    title: "AI-Powered Development",
+    description: "Leverage cutting-edge AI tools to deliver projects 50% faster with higher quality code",
+    icon: Sparkles
+  }, {
+    title: "Full-Stack Expertise",
+    description: "Complete solution from database design to user interface with seamless integration",
+    icon: Rocket
+  }, {
+    title: "Proven Results",
+    description: "Successfully delivered 50+ projects with 98% client satisfaction rate",
+    icon: Trophy
+  }, {
+    title: "On-Time Delivery",
+    description: "Consistent track record of meeting deadlines without compromising quality",
+    icon: Clock
+  }];
+  const capabilities = [{
+    title: "Fast Code with AI",
+    description: "Generate production-ready code 3x faster using advanced AI assistance",
+    gridSize: "md:col-span-2"
+  }, {
+    title: "AI Workflows",
+    description: "Automated testing, deployment, and optimization",
+    gridSize: "md:col-span-1"
+  }, {
+    title: "The AI I Use",
+    description: "ChatGPT, GitHub Copilot, Claude, and custom ML models",
+    gridSize: "md:col-span-1"
+  }, {
+    title: "Full-Stack Development",
+    description: "End-to-end solutions from concept to deployment",
+    gridSize: "md:col-span-2"
+  }, {
+    title: "50+ Projects",
+    description: "Successfully completed and deployed",
+    gridSize: "md:col-span-1"
+  }];
+  const pricing = [{
+    name: "Basic",
+    price: "$80",
+    duration: "1-2 weeks",
+    features: ["Landing Page or Simple App", "Responsive Design", "Basic AI Features", "Email Support", "Source Code Included"],
+    popular: false
+  }, {
+    name: "Standard",
+    price: "$150",
+    duration: "2-3 weeks",
+    features: ["Full Web/Mobile Application", "Database Integration", "Advanced AI Features", "Admin Dashboard", "Priority Support", "1 Month Free Updates"],
+    popular: true
+  }, {
+    name: "Express",
+    price: "$200",
+    duration: "1 week",
+    features: ["Rush Delivery (50% faster)", "Premium AI Integration", "Real-time Features", "Advanced Analytics", "24/7 Support", "3 Months Free Updates"],
+    popular: false
+  }];
+  const projects = [{
+    name: "AI E-commerce Platform",
+    category: "Web",
+    techStack: ["React", "Node.js", "AI/ML"],
+    github: "https://github.com",
+    preview: "https://demo.com",
+    image: aiPattern
+  }, {
+    name: "Smart Food Delivery App",
+    category: "Mobile",
+    techStack: ["React Native", "Firebase"],
+    github: "https://github.com",
+    preview: "https://demo.com",
+    image: aiPattern
+  }, {
+    name: "SaaS Analytics Dashboard",
+    category: "Web",
+    techStack: ["Next.js", "PostgreSQL"],
+    github: "https://github.com",
+    preview: "https://demo.com",
+    image: aiPattern
+  }];
+  const reviews = [{
+    name: "Sarah Johnson",
+    role: "Startup Founder",
+    review: "Deni delivered our MVP in record time with impressive AI features. The quality exceeded our expectations!",
+    rating: 5,
+    avatar: "/api/placeholder/40/40"
+  }, {
+    name: "Mike Chen",
+    role: "Product Manager",
+    review: "Professional, reliable, and incredibly skilled. The AI integration was seamless and boosted our user engagement by 40%.",
+    rating: 5,
+    avatar: "/api/placeholder/40/40"
+  }, {
+    name: "Lisa Rodriguez",
+    role: "E-commerce Owner",
+    review: "Outstanding work on our mobile app. The AI-powered recommendations increased our sales significantly.",
+    rating: 5,
+    avatar: "/api/placeholder/40/40"
+  }];
   const nextReview = () => {
-    setCurrentReview((prev) => (prev + 1) % reviews.length);
+    setCurrentReview(prev => (prev + 1) % reviews.length);
   };
-
   const prevReview = () => {
-    setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
+    setCurrentReview(prev => (prev - 1 + reviews.length) % reviews.length);
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold font-heading mb-6 leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold font-heading mb-6 leading-tight my-[50px]">
                   Hi, I'm <span className="text-transparent bg-gradient-primary bg-clip-text">Deni Firdaus</span>
                   <br />Software Developer
                 </h1>
@@ -258,16 +191,12 @@ const Index = () => {
             <div className="hidden lg:block">
               <div className="relative">
                 <div className="glass rounded-3xl p-8 space-y-4">
-                  {techStack.slice(0, 6).map((tech, index) => (
-                    <div 
-                      key={tech}
-                      className="flex items-center gap-3 animate-pulse"
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                    >
+                  {techStack.slice(0, 6).map((tech, index) => <div key={tech} className="flex items-center gap-3 animate-pulse" style={{
+                  animationDelay: `${index * 0.1}s`
+                }}>
                       <div className="w-2 h-2 bg-accent rounded-full" />
                       <span className="font-mono text-sm">{tech}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
@@ -279,11 +208,9 @@ const Index = () => {
       <section className="py-16 border-t border-white/10">
         <div className="overflow-hidden">
           <div className="flex gap-8 animate-[scroll_30s_linear_infinite]">
-            {[...techStack, ...techStack].map((tech, index) => (
-              <Badge key={index} variant="outline" className="whitespace-nowrap font-mono">
+            {[...techStack, ...techStack].map((tech, index) => <Badge key={index} variant="outline" className="whitespace-nowrap font-mono">
                 {tech}
-              </Badge>
-            ))}
+              </Badge>)}
           </div>
         </div>
       </section>
@@ -299,8 +226,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="bento-card group">
+            {services.map((service, index) => <Card key={index} className="bento-card group">
                 <CardHeader>
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4">
                     <service.icon className="w-6 h-6 text-white" />
@@ -310,20 +236,17 @@ const Index = () => {
                 <CardContent>
                   <p className="text-muted-foreground mb-6">{service.description}</p>
                   <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm">
+                    {service.features.map((feature, idx) => <li key={idx} className="flex items-center gap-2 text-sm">
                         <Star className="w-4 h-4 text-accent" />
                         {feature}
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                   <Button variant="ghost" className="mt-6 group-hover:text-accent">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -339,8 +262,7 @@ const Index = () => {
           </div>
 
           <div className="bento-grid">
-            {whyChooseMe.map((item, index) => (
-              <div key={index} className="bento-card">
+            {whyChooseMe.map((item, index) => <div key={index} className="bento-card">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-white" />
@@ -350,8 +272,7 @@ const Index = () => {
                     <p className="text-muted-foreground">{item.description}</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -367,12 +288,10 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {capabilities.map((capability, index) => (
-              <div key={index} className={`bento-card ${capability.gridSize}`}>
+            {capabilities.map((capability, index) => <div key={index} className={`bento-card ${capability.gridSize}`}>
                 <h3 className="text-lg font-semibold font-heading mb-3">{capability.title}</h3>
                 <p className="text-muted-foreground">{capability.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -388,13 +307,10 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {pricing.map((plan, index) => (
-              <div key={index} className={`glass rounded-3xl p-8 relative ${plan.popular ? 'ring-2 ring-accent' : ''}`}>
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            {pricing.map((plan, index) => <div key={index} className={`glass rounded-3xl p-8 relative ${plan.popular ? 'ring-2 ring-accent' : ''}`}>
+                {plan.popular && <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <Badge className="bg-accent text-accent-foreground">Most Popular</Badge>
-                  </div>
-                )}
+                  </div>}
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold font-heading mb-2">{plan.name}</h3>
                   <div className="mb-2">
@@ -404,22 +320,15 @@ const Index = () => {
                   <p className="text-muted-foreground">{plan.duration}</p>
                 </div>
                 <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
+                  {plan.features.map((feature, idx) => <li key={idx} className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-success rounded-full" />
                       <span className="text-sm">{feature}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
-                <Button 
-                  variant={plan.popular ? "gradient" : "outline"} 
-                  className="w-full"
-                  asChild
-                >
+                <Button variant={plan.popular ? "gradient" : "outline"} className="w-full" asChild>
                   <a href="/contact">Get Started</a>
                 </Button>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -438,24 +347,19 @@ const Index = () => {
           </div>
 
           <div className="overflow-x-auto scrollbar-hide">
-            <div className="flex gap-6 pb-4" style={{ width: 'max-content' }}>
-              {projects.map((project, index) => (
-                <div key={index} className="bento-card min-w-[350px] group">
+            <div className="flex gap-6 pb-4" style={{
+            width: 'max-content'
+          }}>
+              {projects.map((project, index) => <div key={index} className="bento-card min-w-[350px] group">
                   <div className="aspect-video bg-muted rounded-xl mb-4 overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                    <img src={project.image} alt={project.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold font-heading mb-2">{project.name}</h3>
                   <Badge variant="secondary" className="mb-3">{project.category}</Badge>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.techStack.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs font-mono">
+                    {project.techStack.map(tech => <Badge key={tech} variant="outline" className="text-xs font-mono">
                         {tech}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
@@ -471,8 +375,7 @@ const Index = () => {
                       </a>
                     </Button>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -490,30 +393,19 @@ const Index = () => {
 
           <div className="max-w-4xl mx-auto">
             <div className="glass rounded-3xl p-8 relative">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute left-4 top-1/2 transform -translate-y-1/2"
-                onClick={prevReview}
-              >
+              <Button variant="ghost" size="icon" className="absolute left-4 top-1/2 transform -translate-y-1/2" onClick={prevReview}>
                 <ChevronLeft className="w-5 h-5" />
               </Button>
               
               <div className="text-center px-16">
                 <div className="flex justify-center mb-4">
-                  {[...Array(reviews[currentReview].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  {[...Array(reviews[currentReview].rating)].map((_, i) => <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
                 </div>
                 <blockquote className="text-lg mb-6 text-muted-foreground italic">
                   "{reviews[currentReview].review}"
                 </blockquote>
                 <div className="flex items-center justify-center gap-4">
-                  <img 
-                    src={reviews[currentReview].avatar}
-                    alt={reviews[currentReview].name}
-                    className="w-12 h-12 rounded-full"
-                  />
+                  <img src={reviews[currentReview].avatar} alt={reviews[currentReview].name} className="w-12 h-12 rounded-full" />
                   <div className="text-left">
                     <div className="font-semibold">{reviews[currentReview].name}</div>
                     <div className="text-muted-foreground text-sm">{reviews[currentReview].role}</div>
@@ -521,26 +413,13 @@ const Index = () => {
                 </div>
               </div>
 
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute right-4 top-1/2 transform -translate-y-1/2"
-                onClick={nextReview}
-              >
+              <Button variant="ghost" size="icon" className="absolute right-4 top-1/2 transform -translate-y-1/2" onClick={nextReview}>
                 <ChevronRight className="w-5 h-5" />
               </Button>
             </div>
 
             <div className="flex justify-center gap-2 mt-6">
-              {reviews.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentReview ? 'bg-accent' : 'bg-muted'
-                  }`}
-                  onClick={() => setCurrentReview(index)}
-                />
-              ))}
+              {reviews.map((_, index) => <button key={index} className={`w-2 h-2 rounded-full transition-colors ${index === currentReview ? 'bg-accent' : 'bg-muted'}`} onClick={() => setCurrentReview(index)} />)}
             </div>
           </div>
         </div>
@@ -599,8 +478,6 @@ const Index = () => {
           </div>
         </DialogContent>
       </Dialog>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
