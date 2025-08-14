@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ServicesList from "@/components/ServicesList";
 import heroImage from "@/assets/hero-bg.jpg";
 import aiPattern from "@/assets/ai-pattern.jpg";
 const Index = () => {
@@ -225,29 +226,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => <Card key={index} className="bento-card group">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4">
-                    <service.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <CardTitle className="font-heading">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-6">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => <li key={idx} className="flex items-center gap-2 text-sm">
-                        <Star className="w-4 h-4 text-accent" />
-                        {feature}
-                      </li>)}
-                  </ul>
-                  <Button variant="ghost" className="mt-6 group-hover:text-accent">
-                    Learn More
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </CardContent>
-              </Card>)}
-          </div>
+          <ServicesList services={services} />
         </div>
       </section>
 
