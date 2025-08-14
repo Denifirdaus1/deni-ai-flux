@@ -335,7 +335,7 @@ const Index = () => {
 
       {/* Projects Showcase */}
       <section className="py-20">
-        <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-between items-center mb-16">
             <div>
               <h2 className="font-bold font-heading mb-4 text-5xl">Featured Projects</h2>
