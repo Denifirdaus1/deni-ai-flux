@@ -350,7 +350,7 @@ const Index = () => {
             <div className="flex gap-6 pb-4" style={{
             width: 'max-content'
           }}>
-              {projects.map((project, index) => <div key={index} className="bento-card min-w-[280px] group">
+              {projects.map((project, index) => <div key={index} className="bento-card min-w-[200px] group">
                   <div className="aspect-video bg-muted rounded-xl mb-4 overflow-hidden">
                     <img src={project.image} alt={project.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   </div>
