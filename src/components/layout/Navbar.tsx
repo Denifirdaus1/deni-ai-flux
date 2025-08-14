@@ -24,8 +24,8 @@ const Navbar = () => {
     name: "Contact",
     path: "/contact"
   }];
-  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-lg" : "bg-transparent"}`}>
-      <div className="container mx-auto px-6">
+  return <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 pt-4">
+      <div className={`mx-auto transition-all duration-500 ${isScrolled ? "max-w-md glass shadow-lg" : "max-w-7xl bg-transparent"} rounded-full px-6`}>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 font-heading font-bold text-xl py-0 px-[21px]">
