@@ -165,10 +165,7 @@ const Index = () => {
                     <ArrowRight className="w-5 h-5" />
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" onClick={() => setShowResume(true)}>
-                  <Download className="w-5 h-5" />
-                  View Resume
-                </Button>
+                
                 
                 <div className="flex gap-4">
                   <Button variant="ghost" size="icon" className="hover-glow" asChild>
