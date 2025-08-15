@@ -159,14 +159,6 @@ const Index = () => {
               </div>
               
               <div className="flex flex-wrap items-center gap-4 mx-[23px]">
-                <Button variant="hero" size="lg" asChild>
-                  <a href="/contact">
-                    Hire Me
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                </Button>
-                
-                
                 <div className="flex gap-4">
                   <Button variant="ghost" size="icon" className="hover-glow" asChild>
                     <a href="https://github.com/denifirdaus" target="_blank" rel="noopener noreferrer">
@@ -184,6 +176,13 @@ const Index = () => {
                     </a>
                   </Button>
                 </div>
+                
+                <Button variant="hero" size="lg" asChild>
+                  <a href="/contact">
+                    Hire Me
+                    <ArrowRight className="w-5 h-5" />
+                  </a>
+                </Button>
               </div>
             </div>
 
