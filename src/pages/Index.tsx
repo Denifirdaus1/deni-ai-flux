@@ -158,7 +158,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-4 mx-[23px]">
+              <div className="flex flex-wrap items-center gap-4 mx-[23px]">
                 <Button variant="hero" size="lg" asChild>
                   <a href="/contact">
                     Hire Me
@@ -169,24 +169,24 @@ const Index = () => {
                   <Download className="w-5 h-5" />
                   View Resume
                 </Button>
-              </div>
-
-              <div className="flex gap-4 mx-[23px]">
-                <Button variant="ghost" size="icon" className="hover-glow" asChild>
-                  <a href="https://github.com/denifirdaus" target="_blank" rel="noopener noreferrer">
-                    <Github className="w-6 h-6" />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" className="hover-glow" asChild>
-                  <a href="https://linkedin.com/in/denifirdaus" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="w-6 h-6" />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" className="hover-glow" asChild>
-                  <a href="mailto:deni@example.com">
-                    <Mail className="w-6 h-6" />
-                  </a>
-                </Button>
+                
+                <div className="flex gap-4">
+                  <Button variant="ghost" size="icon" className="hover-glow" asChild>
+                    <a href="https://github.com/denifirdaus" target="_blank" rel="noopener noreferrer">
+                      <Github className="w-6 h-6" />
+                    </a>
+                  </Button>
+                  <Button variant="ghost" size="icon" className="hover-glow" asChild>
+                    <a href="https://linkedin.com/in/denifirdaus" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-6 h-6" />
+                    </a>
+                  </Button>
+                  <Button variant="ghost" size="icon" className="hover-glow" asChild>
+                    <a href="mailto:deni@example.com">
+                      <Mail className="w-6 h-6" />
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
 
