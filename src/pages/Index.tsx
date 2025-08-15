@@ -8,6 +8,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServicesList from "@/components/ServicesList";
 import SolarSystem from "@/components/SolarSystem";
+import Cubes from "@/components/Cubes";
 import heroImage from "@/assets/hero-bg.jpg";
 import aiPattern from "@/assets/ai-pattern.jpg";
 const Index = () => {
@@ -209,14 +210,27 @@ const Index = () => {
       {/* What I Do */}
       <section className="py-[51px]">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-bold font-heading mb-6 text-5xl">What I Do</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Specialized in creating modern digital solutions with AI integration
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-bold font-heading mb-12 text-5xl">What I Do ?</h2>
+              <ServicesList services={services} />
+            </div>
+            <div className="flex justify-center items-center h-full">
+              <div className="w-80 h-80">
+                <Cubes 
+                  gridSize={8}
+                  maxAngle={60}
+                  radius={4}
+                  borderStyle="2px dashed hsl(var(--primary))"
+                  faceColor="hsl(var(--card))"
+                  rippleColor="hsl(var(--accent))"
+                  rippleSpeed={1.5}
+                  autoAnimate={true}
+                  rippleOnClick={true}
+                />
+              </div>
+            </div>
           </div>
-
-          <ServicesList services={services} />
         </div>
       </section>
 
