@@ -146,7 +146,7 @@ const Index = () => {
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 px-[57px]">
               <div>
                 <h1 className="text-5xl font-bold font-heading mb-6 leading-tight my-[50px] text-left md:text-5xl mx-[23px]">
                   Hi, I'm <span className="text-transparent bg-gradient-primary bg-clip-text">Deni Firdaus</span>
@@ -178,7 +178,7 @@ const Index = () => {
                 </div>
                 
                 <Button variant="hero" size="lg" asChild>
-                  <a href="/contact">
+                  <a href="/contact" className="mx-[10px]">
                     Hire Me
                     <ArrowRight className="w-5 h-5" />
                   </a>
