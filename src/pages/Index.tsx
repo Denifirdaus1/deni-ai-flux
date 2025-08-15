@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServicesList from "@/components/ServicesList";
+import SolarSystem from "@/components/SolarSystem";
 import heroImage from "@/assets/hero-bg.jpg";
 import aiPattern from "@/assets/ai-pattern.jpg";
 const Index = () => {
@@ -190,15 +191,8 @@ const Index = () => {
             </div>
 
             <div className="hidden lg:block">
-              <div className="relative">
-                <div className="glass rounded-3xl p-8 space-y-4">
-                  {techStack.slice(0, 6).map((tech, index) => <div key={tech} className="flex items-center gap-3 animate-pulse" style={{
-                  animationDelay: `${index * 0.1}s`
-                }}>
-                      <div className="w-2 h-2 bg-accent rounded-full" />
-                      <span className="font-mono text-sm">{tech}</span>
-                    </div>)}
-                </div>
+              <div className="relative flex justify-center">
+                <SolarSystem />
               </div>
             </div>
           </div>
